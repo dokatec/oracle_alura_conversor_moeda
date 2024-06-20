@@ -6,17 +6,17 @@ public class Menu {
     public Menu() {
 
         Scanner leitura = new Scanner(System.in);
-        System.out.println("\r\n" + //
-                "██████  ███████ ███    ███     ██    ██ ██    ██ ███    ██ ██████   ██████  \r\n" + //
-                "██   ██ ██      ████  ████     ██    ██ ██    ██ ████   ██ ██   ██ ██    ██ \r\n" + //
-                "██████  █████   ██ ████ ██     ██    ██ ██    ██ ██ ██  ██ ██   ██ ██    ██ \r\n" + //
-                "██   ██ ██      ██  ██  ██      ██  ██  ██    ██ ██  ██ ██ ██   ██ ██    ██ \r\n" + //
-                "██████  ███████ ██      ██       ████    ██████  ██   ████ ██████   ██████  \r\n" + //
-                "                                                                            \r\n" + //
-                "                                                                            \r\n" + //
+        System.out.println("\r\n" +
+                "██████  ███████ ███    ███     ██    ██ ██    ██ ███    ██ ██████   ██████  \r\n" +
+                "██   ██ ██      ████  ████     ██    ██ ██    ██ ████   ██ ██   ██ ██    ██ \r\n" +
+                "██████  █████   ██ ████ ██     ██    ██ ██    ██ ██ ██  ██ ██   ██ ██    ██ \r\n" +
+                "██   ██ ██      ██  ██  ██      ██  ██  ██    ██ ██  ██ ██ ██   ██ ██    ██ \r\n" +
+                "██████  ███████ ██      ██       ████    ██████  ██   ████ ██████   ██████  \r\n" +
+                "                                                                            \r\n" +
+                "                                                                            \r\n" +
                 "");
 
-        System.out.println("Ola, Seja bem vindo ao nosso conversor de moedas \r\n" + //
+        System.out.println("Ola, Seja bem vindo ao nosso conversor de moedas \r\n" +
                 "escolha uma das opções abaixo.");
 
         int opcaoMenu;
@@ -24,15 +24,15 @@ public class Menu {
 
         try {
 
-            String Menu = "\r\n" + //
-                    "  __  __ ______ _   _ _    _ \r\n" + //
-                    " |  \\/  |  ____| \\ | | |  | |\r\n" + //
-                    " | \\  / | |__  |  \\| | |  | |\r\n" + //
-                    " | |\\/| |  __| | . ` | |  | |\r\n" + //
-                    " | |  | | |____| |\\  | |__| |\r\n" + //
-                    " |_|  |_|______|_| \\_|\\____/ \r\n" + //
-                    "                             \r\n" + //
-                    "                             \r\n" + //
+            String Menu = "\r\n" +
+                    "  __  __ ______ _   _ _    _ \r\n" +
+                    " |  \\/  |  ____| \\ | | |  | |\r\n" +
+                    " | \\  / | |__  |  \\| | |  | |\r\n" +
+                    " | |\\/| |  __| | . ` | |  | |\r\n" +
+                    " | |  | | |____| |\\  | |__| |\r\n" +
+                    " |_|  |_|______|_| \\_|\\____/ \r\n" +
+                    "                             \r\n" +
+                    "                             \r\n" +
                     "" +
                     """
                             --------------------------------------------
@@ -49,6 +49,7 @@ public class Menu {
                             """;
 
             System.out.println(Menu);
+            System.out.print("Escolha uma opcao: ");
 
             do {
                 opcaoMenu = leitura.nextInt();
@@ -129,8 +130,10 @@ public class Menu {
                         break;
 
                 }
+                System.out.print("Digite uma nova opcao: ");
 
             } while (opcaoMenu != 9);
+
             leitura.close();
 
         } catch (Exception e) {
